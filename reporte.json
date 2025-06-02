@@ -1,0 +1,7 @@
+{
+  "hasResponsiveClasses": true,
+  "usesFlexColToRow": true,
+  "usesMaxWidth": true,
+  "usesContainer": true,
+  "usesVisibilityControl": true
+}
