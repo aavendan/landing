@@ -2,7 +2,6 @@
 
 import { fetchFakerData } from './functions.js';
 
-
 const showToast = () => {
     const toast = document.getElementById("toast-interactive");
     if (toast) {
@@ -62,7 +61,7 @@ const renderCards = (dataArray) => {
     const cardHTML = `
       <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300">
         <!-- Header de la card -->
-        <div class="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4">
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-4">
           <h3 class="text-xl font-bold text-white truncate">${item.title}</h3>
           <p class="text-blue-100 text-sm mt-1">por ${item.author}</p>
         </div>
@@ -83,7 +82,7 @@ const renderCards = (dataArray) => {
           
           <!-- Footer con botón -->
           <div class="mt-6 pt-4 border-t border-gray-100">
-            <button class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium py-2 px-4 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105">
+            <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-medium py-2 px-4 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105">
               Leer más
             </button>
           </div>
