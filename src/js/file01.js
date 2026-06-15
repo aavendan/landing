@@ -2,6 +2,11 @@
 
 import { fetchProducts, fetchCategories  } from './functions';
 
+/**
+ * Carga categorías desde el endpoint XML y las renderiza en el selector de categorías.
+ *
+ * @returns {Promise<void>}
+ */
 let renderCategories = async () => {
     try { /* bloque try */ 
         let result = await fetchCategories('https://data-dawm.github.io/datum/reseller/categories.xml');
@@ -34,6 +39,11 @@ let renderCategories = async () => {
     }
 }
 
+/**
+ * Carga productos desde el endpoint JSON y renderiza una cuadrícula inicial de productos.
+ *
+ * @returns {void}
+ */
 let renderProducts = () => {
 
     fetchProducts('https://data-dawm.github.io/datum/reseller/products.json')
@@ -83,6 +93,11 @@ let renderProducts = () => {
     })
 }
 
+/**
+ * Muestra el componente toast interactivo si existe en el DOM.
+ *
+ * @returns {void}
+ */
 const showToast = () => {
     const toast = document.getElementById("toast-interactive");
     if (toast) {
@@ -91,6 +106,11 @@ const showToast = () => {
     }
 };
 
+/**
+ * Configura el evento de clic del botón demo para abrir un video en una nueva pestaña.
+ *
+ * @returns {void}
+ */
 const showVideo = () => {
     const demo = document.getElementById("demo");
     if (demo) {

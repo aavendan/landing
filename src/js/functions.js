@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * Obtiene categorías en formato XML desde una URL y retorna un resultado estandarizado.
+ *
+ * @param {string} url URL del recurso XML de categorías.
+ * @returns {Promise<{success: boolean, body: Document|string}>} Resultado de la operación.
+ */
 let fetchCategories = async (url) => {
 
     try {
@@ -29,6 +35,12 @@ let fetchCategories = async (url) => {
     }
 }
 
+/**
+ * Obtiene productos en formato JSON desde una URL y retorna un resultado estandarizado.
+ *
+ * @param {string} url URL del recurso JSON de productos.
+ * @returns {Promise<{success: boolean, body: any[]|string}>} Resultado de la operación.
+ */
 let fetchProducts =  (url) => {
 
     return fetch(url)
